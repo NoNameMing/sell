@@ -1,0 +1,46 @@
+2019-11-27 10:44:29.750  WARN 17805 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/wangxiaoming/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/Users/wangxiaoming/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2019-11-27 10:44:29.763  INFO 17805 --- [main] com.ming.sell.LoggerTest                 : Starting LoggerTest on wangxiaomings-MacBook-Pro.local with PID 17805 (started by wangxiaoming in /Users/wangxiaoming/Desktop/sell)
+2019-11-27 10:44:29.763 DEBUG 17805 --- [main] com.ming.sell.LoggerTest                 : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-11-27 10:44:29.763  INFO 17805 --- [main] com.ming.sell.LoggerTest                 : No active profile set, falling back to default profiles: default
+2019-11-27 10:44:30.298  INFO 17805 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-27 10:44:30.300  INFO 17805 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-27 10:44:30.331  INFO 17805 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+2019-11-27 10:44:31.179  INFO 17805 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-27 10:44:31.855  WARN 17805 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-11-27 10:44:31.935  INFO 17805 --- [main] com.ming.sell.LoggerTest                 : Started LoggerTest in 2.755 seconds (JVM running for 3.481)
+2019-11-27 10:44:32.119 DEBUG 17805 --- [main] com.ming.sell.LoggerTest                 : debug...
+2019-11-27 10:44:32.119  INFO 17805 --- [main] com.ming.sell.LoggerTest                 : name: mingpassword: woc
+2019-11-27 10:44:32.119  INFO 17805 --- [main] com.ming.sell.LoggerTest                 : name: ming, password: woc
+2019-11-27 10:44:32.119 ERROR 17805 --- [main] com.ming.sell.LoggerTest                 : error...
+2019-11-27 10:44:32.146  INFO 17805 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-27 10:45:14.434  WARN 17811 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/wangxiaoming/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/Users/wangxiaoming/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2019-11-27 10:45:14.447  INFO 17811 --- [main] com.ming.sell.LoggerTest                 : Starting LoggerTest on wangxiaomings-MacBook-Pro.local with PID 17811 (started by wangxiaoming in /Users/wangxiaoming/Desktop/sell)
+2019-11-27 10:45:14.448 DEBUG 17811 --- [main] com.ming.sell.LoggerTest                 : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-11-27 10:45:14.448  INFO 17811 --- [main] com.ming.sell.LoggerTest                 : No active profile set, falling back to default profiles: default
+2019-11-27 10:45:15.018  INFO 17811 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-27 10:45:15.020  INFO 17811 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-27 10:45:15.056  INFO 17811 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2019-11-27 10:45:15.978  INFO 17811 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-27 10:45:16.703  WARN 17811 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-11-27 10:45:16.763  INFO 17811 --- [main] com.ming.sell.LoggerTest                 : Started LoggerTest in 2.722 seconds (JVM running for 3.625)
+2019-11-27 10:45:16.921 DEBUG 17811 --- [main] com.ming.sell.LoggerTest                 : debug...
+2019-11-27 10:45:16.922  INFO 17811 --- [main] com.ming.sell.LoggerTest                 : name: mingpassword: woc
+2019-11-27 10:45:16.922  INFO 17811 --- [main] com.ming.sell.LoggerTest                 : name: ming, password: woc
+2019-11-27 10:45:16.922 ERROR 17811 --- [main] com.ming.sell.LoggerTest                 : error...
+2019-11-27 10:45:16.955  INFO 17811 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

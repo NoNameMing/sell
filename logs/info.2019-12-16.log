@@ -1,0 +1,633 @@
+Starting PayServiceImplTest on wangxiaomings-MacBook-Pro.local with PID 11631 (started by wangxiaoming in /Users/wangxiaoming/Desktop/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1f9e9475: startup date [Mon Dec 16 09:13:29 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.4.Final
+No MyBatis mapper was found in '[com.ming.sell]' package. Please check your configuration.
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.ProductCategoryDao.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.ProductInfoDao.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.OrderMasterDao.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.OrderDetailDao.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f69b89bb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1f9e9475: startup date [Mon Dec 16 09:13:29 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.ming.sell.viewobject.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.ming.sell.controller.BuyerOrderController.create(com.ming.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.ming.sell.viewobject.ResultVO<java.util.List<com.ming.sell.dto.OrderDTO>> com.ming.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.ming.sell.viewobject.ResultVO<com.ming.sell.dto.OrderDTO> com.ming.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.ming.sell.viewobject.ResultVO com.ming.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.ming.sell.viewobject.ResultVO com.ming.sell.controller.BuyerProductController.list()
+Mapped "{[/pay/create],methods=[GET]}" onto public void com.ming.sell.controller.PayController.create(java.lang.String,java.lang.String)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.ming.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.ming.sell.controller.WeChatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.ming.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@1f9e9475: startup date [Mon Dec 16 09:13:29 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+Started PayServiceImplTest in 5.533 seconds (JVM running for 6.292)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信支付】request=PayRequest(payTypeEnum=WXPAY_H5, orderId=1576114924443691816, orderAmount=4.66, orderName=微信点餐订单, openid=oTgZpwU-i3JlkUtvn0oLN0toyAhM)
+【微信支付】response=PayResponse(prePayParams=null, payUri=null, appId=wxd898fcb01713c658, timeStamp=1576458815, nonceStr=pJYlEGTLysDRUL5I, packAge=prepay_id=wx1609140416502046327c97d21455401400, signType=MD5, paySign=A7DA28033AAB12F232C83ADC51A905D2, orderAmount=null, orderId=null, outTradeNo=null)
+Closing org.springframework.web.context.support.GenericWebApplicationContext@1f9e9475: startup date [Mon Dec 16 09:13:29 CST 2019]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on wangxiaomings-MacBook-Pro.local with PID 11639 (started by wangxiaoming in /Users/wangxiaoming/Desktop/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1f9e9475: startup date [Mon Dec 16 09:22:43 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.4.Final
+No MyBatis mapper was found in '[com.ming.sell]' package. Please check your configuration.
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.ProductCategoryDao.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.ProductInfoDao.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.OrderMasterDao.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.OrderDetailDao.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$58bd9157] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1f9e9475: startup date [Mon Dec 16 09:22:43 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.ming.sell.viewobject.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.ming.sell.controller.BuyerOrderController.create(com.ming.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.ming.sell.viewobject.ResultVO<java.util.List<com.ming.sell.dto.OrderDTO>> com.ming.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.ming.sell.viewobject.ResultVO<com.ming.sell.dto.OrderDTO> com.ming.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.ming.sell.viewobject.ResultVO com.ming.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.ming.sell.viewobject.ResultVO com.ming.sell.controller.BuyerProductController.list()
+Mapped "{[/pay/create],methods=[GET]}" onto public void com.ming.sell.controller.PayController.create(java.lang.String,java.lang.String)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.ming.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.ming.sell.controller.WeChatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.ming.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@1f9e9475: startup date [Mon Dec 16 09:22:43 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+Started PayServiceImplTest in 4.754 seconds (JVM running for 5.475)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信支付】request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1576114924443691816",
+  "orderAmount": 4.66,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwU-i3JlkUtvn0oLN0toyAhM"
+}
+【微信支付】response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1576459368",
+  "nonceStr": "4MUQPXVLsoTg6Vko",
+  "packAge": "prepay_id\u003dwx1609231696802646327c97d21086473200",
+  "signType": "MD5",
+  "paySign": "3D3727B689F9883F2ABA767C20D5ED50"
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@1f9e9475: startup date [Mon Dec 16 09:22:43 CST 2019]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on wangxiaomings-MacBook-Pro.local with PID 11667 (/Users/wangxiaoming/Desktop/sell/target/classes started by wangxiaoming in /Users/wangxiaoming/Desktop/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ce24091: startup date [Mon Dec 16 09:40:08 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.4.Final
+No MyBatis mapper was found in '[com.ming.sell]' package. Please check your configuration.
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.ProductCategoryDao.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.ProductInfoDao.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.OrderMasterDao.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.OrderDetailDao.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bd1bf78b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.11
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1205 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ce24091: startup date [Mon Dec 16 09:40:08 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.ming.sell.viewobject.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.ming.sell.controller.BuyerOrderController.create(com.ming.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.ming.sell.viewobject.ResultVO<java.util.List<com.ming.sell.dto.OrderDTO>> com.ming.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.ming.sell.viewobject.ResultVO com.ming.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.ming.sell.viewobject.ResultVO<com.ming.sell.dto.OrderDTO> com.ming.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.ming.sell.viewobject.ResultVO com.ming.sell.controller.BuyerProductController.list()
+Mapped "{[/pay/create],methods=[GET]}" onto public void com.ming.sell.controller.PayController.create(java.lang.String,java.lang.String)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.ming.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.ming.sell.controller.WeChatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.ming.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ce24091: startup date [Mon Dec 16 09:40:08 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler [http-nio-8080]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 3.872 seconds (JVM running for 4.593)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ce24091: startup date [Mon Dec 16 09:40:08 CST 2019]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on wangxiaomings-MacBook-Pro.local with PID 11736 (/Users/wangxiaoming/Desktop/sell/target/classes started by wangxiaoming in /Users/wangxiaoming/Desktop/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ce24091: startup date [Mon Dec 16 10:10:08 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.4.Final
+No MyBatis mapper was found in '[com.ming.sell]' package. Please check your configuration.
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.ProductCategoryDao.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.ProductInfoDao.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.OrderMasterDao.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.OrderDetailDao.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$18d06ed7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.11
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1573 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ce24091: startup date [Mon Dec 16 10:10:08 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.ming.sell.viewobject.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.ming.sell.controller.BuyerOrderController.create(com.ming.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.ming.sell.viewobject.ResultVO<java.util.List<com.ming.sell.dto.OrderDTO>> com.ming.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.ming.sell.viewobject.ResultVO com.ming.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.ming.sell.viewobject.ResultVO<com.ming.sell.dto.OrderDTO> com.ming.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.ming.sell.viewobject.ResultVO com.ming.sell.controller.BuyerProductController.list()
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ming.sell.controller.PayController.create(java.lang.String,java.lang.String)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.ming.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.ming.sell.controller.WeChatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.ming.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler [http-nio-8080]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 6.743 seconds (JVM running for 7.272)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ce24091: startup date [Mon Dec 16 10:10:08 CST 2019]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on wangxiaomings-MacBook-Pro.local with PID 11799 (/Users/wangxiaoming/Desktop/sell/target/classes started by wangxiaoming in /Users/wangxiaoming/Desktop/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fbd1f6: startup date [Mon Dec 16 10:40:35 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.4.Final
+No MyBatis mapper was found in '[com.ming.sell]' package. Please check your configuration.
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.ProductCategoryDao.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.ProductInfoDao.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.OrderMasterDao.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.OrderDetailDao.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$57ba9452] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.11
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1247 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fbd1f6: startup date [Mon Dec 16 10:40:35 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.ming.sell.viewobject.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.ming.sell.controller.BuyerOrderController.create(com.ming.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.ming.sell.viewobject.ResultVO<java.util.List<com.ming.sell.dto.OrderDTO>> com.ming.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.ming.sell.viewobject.ResultVO com.ming.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.ming.sell.viewobject.ResultVO<com.ming.sell.dto.OrderDTO> com.ming.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.ming.sell.viewobject.ResultVO com.ming.sell.controller.BuyerProductController.list()
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ming.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.ming.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.ming.sell.controller.WeChatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.ming.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler [http-nio-8080]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 3.727 seconds (JVM running for 4.613)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【微信支付】request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1576114924443691816",
+  "orderAmount": 4.66,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwU-i3JlkUtvn0oLN0toyAhM"
+}
+【微信支付】response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1576464185",
+  "nonceStr": "ZC21T15v0rv5xXlY",
+  "packAge": "prepay_id\u003dwx1610433384303346327c97d21016374300",
+  "signType": "MD5",
+  "paySign": "0541091FA4CBDE3091076C8202F11BE1"
+}
+【微信支付】request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1576114924443691816",
+  "orderAmount": 4.66,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwU-i3JlkUtvn0oLN0toyAhM"
+}
+【微信支付】response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1576464190",
+  "nonceStr": "ptspXXFzYN95p1S4",
+  "packAge": "prepay_id\u003dwx1610433902291046327c97d21810766200",
+  "signType": "MD5",
+  "paySign": "FFB14971910A80BF9FB1BEEF4FCEC36D"
+}
+【微信支付】request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1576114924443691816",
+  "orderAmount": 4.66,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwU-i3JlkUtvn0oLN0toyAhM"
+}
+【微信支付】response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1576464191",
+  "nonceStr": "pmky256gwLB1B7Ja",
+  "packAge": "prepay_id\u003dwx1610434060550746327c97d21540767800",
+  "signType": "MD5",
+  "paySign": "85FB25C86F6409BBA0971EF7AF4D0BB1"
+}
+【微信支付】request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1576114924443691816",
+  "orderAmount": 4.66,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwU-i3JlkUtvn0oLN0toyAhM"
+}
+【微信支付】response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1576464193",
+  "nonceStr": "9izbIloN2eHMYdvR",
+  "packAge": "prepay_id\u003dwx1610434192803446327c97d21220988500",
+  "signType": "MD5",
+  "paySign": "566299BDE47742E6046BF8AAF5DD38F2"
+}
+【微信支付】request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1576114924443691816",
+  "orderAmount": 4.66,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwU-i3JlkUtvn0oLN0toyAhM"
+}
+【微信支付】response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1576464194",
+  "nonceStr": "eerkbMEnQuPi1L1S",
+  "packAge": "prepay_id\u003dwx1610434315072946327c97d21004218400",
+  "signType": "MD5",
+  "paySign": "320FDA9C12D7BC87142248C798AD36D6"
+}
+【微信支付】request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1576114924443691816",
+  "orderAmount": 4.66,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwU-i3JlkUtvn0oLN0toyAhM"
+}
+【微信支付】response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1576464196",
+  "nonceStr": "WvS5VPnS3fCYjzn8",
+  "packAge": "prepay_id\u003dwx1610434469360146327c97d21855179900",
+  "signType": "MD5",
+  "paySign": "0A9E2618C8D93DCA30417C4654C19215"
+}
+【微信支付】request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1576114924443691816",
+  "orderAmount": 4.66,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwU-i3JlkUtvn0oLN0toyAhM"
+}
+【微信支付】response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1576464312",
+  "nonceStr": "2MdvtWXcWu2fARC4",
+  "packAge": "prepay_id\u003dwx1610454146722146327c97d21444015900",
+  "signType": "MD5",
+  "paySign": "9DDB056FC37026B243B6F4D48B558820"
+}
+【微信支付】request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1576114924443691816",
+  "orderAmount": 4.66,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwU-i3JlkUtvn0oLN0toyAhM"
+}
+【微信支付】response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1576464324",
+  "nonceStr": "pGCxgNBkrLHjBwEf",
+  "packAge": "prepay_id\u003dwx1610455272563646327c97d21882928700",
+  "signType": "MD5",
+  "paySign": "2B34FE763F344880993A7819AFF7D600"
+}
+【微信支付】request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1576114924443691816",
+  "orderAmount": 4.66,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwU-i3JlkUtvn0oLN0toyAhM"
+}
+【微信支付】response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1576464350",
+  "nonceStr": "yyVts1Ahhc0mrD0k",
+  "packAge": "prepay_id\u003dwx1610461940310946327c97d21402240100",
+  "signType": "MD5",
+  "paySign": "AB5D069CB5CE9D62DA84C3840DB13E9C"
+}
+【微信网页授权】获取code，redirectUrl=https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd898fcb01713c658&redirect_uri=http%3A%2F%2Fnonameming.natapp1.cc%2Fsell%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2Fsell.com%2F%23%2F#wechat_redirect
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fbd1f6: startup date [Mon Dec 16 10:40:35 CST 2019]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on wangxiaomings-MacBook-Pro.local with PID 14178 (/Users/wangxiaoming/Desktop/sell/target/classes started by wangxiaoming in /Users/wangxiaoming/Desktop/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ce24091: startup date [Mon Dec 16 21:54:38 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.4.Final
+No MyBatis mapper was found in '[com.ming.sell]' package. Please check your configuration.
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.ProductCategoryDao.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.ProductInfoDao.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.OrderMasterDao.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.OrderDetailDao.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5297f374] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.11
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1638 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ce24091: startup date [Mon Dec 16 21:54:38 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.ming.sell.viewobject.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.ming.sell.controller.BuyerOrderController.create(com.ming.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.ming.sell.viewobject.ResultVO<java.util.List<com.ming.sell.dto.OrderDTO>> com.ming.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.ming.sell.viewobject.ResultVO com.ming.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.ming.sell.viewobject.ResultVO<com.ming.sell.dto.OrderDTO> com.ming.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.ming.sell.viewobject.ResultVO com.ming.sell.controller.BuyerProductController.list()
+Mapped "{[/pay/notify],methods=[POST]}" onto public void com.ming.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ming.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.ming.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.ming.sell.controller.WeChatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.ming.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler [http-nio-8080]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 4.722 seconds (JVM running for 5.407)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【微信支付】发起支付, request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1576114924443691816",
+  "orderAmount": 4.66,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwU-i3JlkUtvn0oLN0toyAhM"
+}
+【微信支付】发起支付, response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1576504525",
+  "nonceStr": "CXM8rcDQvFVzMiz8",
+  "packAge": "prepay_id\u003dwx1621555492319646327c97d21535429700",
+  "signType": "MD5",
+  "paySign": "02ED1B0DB2F61B6C2EE8F9D839BA09DA"
+}
+【微信支付】发起支付, request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1576114924443691816",
+  "orderAmount": 4.66,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwU-i3JlkUtvn0oLN0toyAhM"
+}
+【微信支付】发起支付, request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1576114924443691816",
+  "orderAmount": 4.66,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwU-i3JlkUtvn0oLN0toyAhM"
+}
+【微信支付】发起支付, request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1576114924443691816",
+  "orderAmount": 4.66,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwU-i3JlkUtvn0oLN0toyAhM"
+}
+【微信支付】发起支付, request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1576114924443691816",
+  "orderAmount": 4.66,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwU-i3JlkUtvn0oLN0toyAhM"
+}
+【微信支付】发起支付, request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1576114924443691816",
+  "orderAmount": 4.66,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwU-i3JlkUtvn0oLN0toyAhM"
+}
+【微信支付】发起支付, request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1576114924443691816",
+  "orderAmount": 4.66,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwU-i3JlkUtvn0oLN0toyAhM"
+}
+【微信支付】发起支付, request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1576114924443691816",
+  "orderAmount": 4.66,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwU-i3JlkUtvn0oLN0toyAhM"
+}
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ce24091: startup date [Mon Dec 16 21:54:38 CST 2019]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on wangxiaomings-MacBook-Pro.local with PID 14374 (/Users/wangxiaoming/Desktop/sell/target/classes started by wangxiaoming in /Users/wangxiaoming/Desktop/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fbd1f6: startup date [Mon Dec 16 22:08:14 CST 2019]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.4.Final
+No MyBatis mapper was found in '[com.ming.sell]' package. Please check your configuration.
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.ProductCategoryDao.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.ProductInfoDao.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.OrderMasterDao.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ming.sell.dao.OrderDetailDao.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a363b68a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.11
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1282 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fbd1f6: startup date [Mon Dec 16 22:08:14 CST 2019]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.ming.sell.viewobject.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.ming.sell.controller.BuyerOrderController.create(com.ming.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list]}" onto public com.ming.sell.viewobject.ResultVO<java.util.List<com.ming.sell.dto.OrderDTO>> com.ming.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.ming.sell.viewobject.ResultVO com.ming.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.ming.sell.viewobject.ResultVO<com.ming.sell.dto.OrderDTO> com.ming.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.ming.sell.viewobject.ResultVO com.ming.sell.controller.BuyerProductController.list()
+Mapped "{[/pay/notify],methods=[POST]}" onto public void com.ming.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ming.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.ming.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.ming.sell.controller.WeChatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.ming.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler [http-nio-8080]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 3.843 seconds (JVM running for 4.67)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+HHH000397: Using ASTQueryTranslatorFactory
+【微信支付】发起支付, request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1576114924443691816",
+  "orderAmount": 4.66,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwU-i3JlkUtvn0oLN0toyAhM"
+}
+【微信支付】发起支付, response={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1576505305",
+  "nonceStr": "7rQ2HCDs5gMm1CGT",
+  "packAge": "prepay_id\u003dwx1622085536014146327c97d21470223100",
+  "signType": "MD5",
+  "paySign": "59156152C0703E5C41D56055F2F3CB99"
+}
